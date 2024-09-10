@@ -2,39 +2,39 @@
 
 [![codecov](https://codecov.io/gh/secondlife/autobuild/branch/main/graph/badge.svg?token=8GBLMAFDIN)](https://codecov.io/gh/secondlife/autobuild)
 
-**Autobuild** is a framework for building packages and for managing the
-dependencies of a package on other packages. It provides a common
-interface to configuring and building any package, but it is not a
-build system like make or cmake. You will still need platform-specific
-make, cmake, or project files to configure and build your
-library. Autobuild will, however, allow you invoke these commands and
-package the product with a common interface.
+**Autobuild** ist ein Framework zum Erstellen von Paketen und zum Verwalten der
+Abhängigkeiten eines Pakets von anderen Paketen. Es bietet eine gemeinsame
+Schnittstelle zum Konfigurieren und Erstellen beliebiger Pakete, ist aber kein
+Build-System wie make oder cmake. Sie benötigen weiterhin plattformspezifische
+make-, cmake- oder Projektdateien zum Konfigurieren und Erstellen Ihrer
+Bibliothek. Mit Autobuild können Sie diese Befehle jedoch aufrufen und
+das Produkt mit einer gemeinsamen Schnittstelle verpacken.
 
-*Important: Linden Lab Autobuild is not the same as or derived from GNU
-Autobuild, but they are similar enough to cause confusion.*
+*Wichtig: Linden Lab Autobuild ist nicht dasselbe wie GNU
+Autobuild oder davon abgeleitet, aber sie sind ähnlich genug, um Verwirrung zu stiften.*
 
-For more information, see [Autobuild's wiki page][wiki].
+Weitere Informationen finden Sie auf der [Wiki-Seite von Autobuild][wiki].
 
 [wiki]: https://wiki.secondlife.com/wiki/Autobuild
 
-## Environment variables
+## Umgebungsvariablen
 
-| Name | Default | Description |
+| Name | Standard | Beschreibung |
 |-|-|-|
-| AUTOBUILD_ADDRSIZE | 32 | Target address size |
-| AUTOBUILD_BUILD_ID | - | Build identifier |
-| AUTOBUILD_CONFIGURATION | - | Target build configuration |
-| AUTOBUILD_CONFIG_FILE | autobuild.xml | Autobuild configuration filename |
-| AUTOBUILD_CPU_COUNT | - | Build system cpu core count |
-| AUTOBUILD_GITHUB_TOKEN | - | GitHub HTTP authorization token to use during package download |
-| AUTOBUILD_GITLAB_TOKEN | - | GitLab HTTP authorization token to use during package download |
-| AUTOBUILD_INSTALLABLE_CACHE | - | Location of local download cache |
-| AUTOBUILD_LOGLEVEL | WARNING | Log level |
-| AUTOBUILD_PLATFORM | - | Target platform |
-| AUTOBUILD_SCM_SEARCH | true | Whether to search for .git in parent directories if using SCM version discovery |
-| AUTOBUILD_VARIABLES_FILE | - | .env file to load |
-| AUTOBUILD_VCS_BRANCH | git branch | autobuild-package.xml VCS info: branch name.  |
-| AUTOBUILD_VCS_INFO | false | Whether to include version control information in autobuild-package.xml |
-| AUTOBUILD_VCS_REVISION | git commit | autobuild-package.xml VCS commit reference to include in autobuild-package.xml. Defaults to current git commit sha. |
-| AUTOBUILD_VCS_URL | git remote url | autobuild-package.xml VCS info: repository URL |
-| AUTOBUILD_VSVER | - | Target Visual Studio version to use on windows |
+| AUTOBUILD_ADDRSIZE | 32 | Zieladressgröße |
+| AUTOBUILD_BUILD_ID | - | Build-ID |
+| AUTOBUILD_CONFIGURATION | - | Ziel-Build-Konfiguration |
+| AUTOBUILD_CONFIG_FILE | autobuild.xml | Name der Autobuild-Konfigurationsdatei |
+| AUTOBUILD_CPU_COUNT | - | Anzahl der CPU-Kerne des Build-Systems |
+| AUTOBUILD_GITHUB_TOKEN | - | GitHub HTTP-Autorisierungstoken zur Verwendung während des Paketdownloads |
+| AUTOBUILD_GITLAB_TOKEN | - | GitLab HTTP-Autorisierungstoken zur Verwendung während des Paketdownloads |
+| AUTOBUILD_INSTALLABLE_CACHE | - | Speicherort des lokalen Download-Cache |
+| AUTOBUILD_LOGLEVEL | WARNUNG | Protokollebene |
+| AUTOBUILD_PLATFORM | - | Zielplattform |
+| AUTOBUILD_SCM_SEARCH | true | Ob bei Verwendung der SCM-Versionserkennung in übergeordneten Verzeichnissen nach .git gesucht werden soll |
+| AUTOBUILD_VARIABLES_FILE | - | Zu ladende .env-Datei |
+| AUTOBUILD_VCS_BRANCH | Git-Zweig | autobuild-package.xml VCS-Info: Zweigname. |
+| AUTOBUILD_VCS_INFO | false | Ob Versionskontrollinformationen in autobuild-package.xml aufgenommen werden sollen |
+| AUTOBUILD_VCS_REVISION | Git-Commit | autobuild-package.xml VCS-Commit-Referenz, die in autobuild-package.xml aufgenommen werden soll. Standardmäßig aktuelles Git-Commit-Sha. |
+| AUTOBUILD_VCS_URL | Git-Remote-URL | autobuild-package.xml VCS-Info: Repository-URL |
+| AUTOBUILD_VSVER | - | Unter Windows zu verwendende Zielversion von Visual Studio |
