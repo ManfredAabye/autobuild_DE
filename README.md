@@ -29,12 +29,12 @@ Weitere Informationen finden Sie auf der [Wiki-Seite von Autobuild][wiki].
 | AUTOBUILD_GITHUB_TOKEN | - | GitHub HTTP-Autorisierungstoken zur Verwendung während des Paketdownloads |
 | AUTOBUILD_GITLAB_TOKEN | - | GitLab HTTP-Autorisierungstoken zur Verwendung während des Paketdownloads |
 | AUTOBUILD_INSTALLABLE_CACHE | - | Speicherort des lokalen Download-Cache |
-| AUTOBUILD_LOGLEVEL | WARNUNG | Protokollebene |
+| AUTOBUILD_LOGLEVEL | WARNING | Protokollebene |
 | AUTOBUILD_PLATFORM | - | Zielplattform |
 | AUTOBUILD_SCM_SEARCH | true | Ob bei Verwendung der SCM-Versionserkennung in übergeordneten Verzeichnissen nach .git gesucht werden soll |
 | AUTOBUILD_VARIABLES_FILE | - | Zu ladende .env-Datei |
-| AUTOBUILD_VCS_BRANCH | Git-Zweig | autobuild-package.xml VCS-Info: Zweigname. |
+| AUTOBUILD_VCS_BRANCH | git branch | autobuild-package.xml VCS-Info: Zweigname. |
 | AUTOBUILD_VCS_INFO | false | Ob Versionskontrollinformationen in autobuild-package.xml aufgenommen werden sollen |
-| AUTOBUILD_VCS_REVISION | Git-Commit | autobuild-package.xml VCS-Commit-Referenz, die in autobuild-package.xml aufgenommen werden soll. Standardmäßig aktuelles Git-Commit-Sha. |
-| AUTOBUILD_VCS_URL | Git-Remote-URL | autobuild-package.xml VCS-Info: Repository-URL |
+| AUTOBUILD_VCS_REVISION | git commit | autobuild-package.xml VCS-Commit-Referenz, die in autobuild-package.xml aufgenommen werden soll. Standardmäßig aktuelles Git-Commit-Sha. |
+| AUTOBUILD_VCS_URL | git remote url | autobuild-package.xml VCS-Info: Repository-URL |
 | AUTOBUILD_VSVER | - | Unter Windows zu verwendende Zielversion von Visual Studio |
